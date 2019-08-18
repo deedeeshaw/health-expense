@@ -3,6 +3,7 @@ import csv
 
 def data_table():
     data_df = pd.read_csv("HealthCare/static/data/health.csv")
+    # data_df = pd.read_csv("static/data/health.csv")
     data = data_df.rename(columns={'All_persons': 'Total Expense', 'Male': 'Male ******', 'Female': 'Female ******',
         'Less_than_high_school': '< High School', 'High_school': "High School",
         'Some_college': 'Some College', 
@@ -24,6 +25,7 @@ def data_table():
 
 def perperson_table():
     per_person_df = pd.read_csv("HealthCare/static/data/per_person.csv")
+    # per_person_df = pd.read_csv("static/data/per_person.csv")
     per_person = per_person_df.rename(columns={'Per_person': 'Total per Person', 'per_Male': "Male ****",
                    'per_Female': "Female ******",
                     'per_Less_than_high_school': '< High School', 'per_High_school': "High Schhol",

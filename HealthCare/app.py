@@ -2,10 +2,10 @@
 # IMPORT FLASK AND OTHER DEFECIENCIS
 ######################################################################
 from flask import Flask, render_template, request
-# from HealthCare.data import data_table, perperson_table
-from data import data_table, perperson_table
-# from HealthCare.health import problem_dd
-from health import problem_dd
+from HealthCare.data import data_table, perperson_table
+# from data import data_table, perperson_table
+from HealthCare.health import problem_dd
+# from health import problem_dd
 ######################################################################
 # create app passing the __name__
 ######################################################################
