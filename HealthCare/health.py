@@ -7,7 +7,7 @@ from flask import request
 ######################################################################
 def problem_dd():
     problem_list = []
-    with open('static/data/health_problem.csv') as problem_file:
+    with open('HealthCare/static/data/health_problem.csv') as problem_file:
         problem = csv.reader(problem_file, delimiter=',')
 
         for row in problem:
